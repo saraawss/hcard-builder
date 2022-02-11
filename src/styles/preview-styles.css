@@ -1,0 +1,53 @@
+.hcontainer {
+	background-color: #e7e9ec;
+    padding-top: var(--bs-gutter-x,0.75rem);
+    padding-bottom: 170px;
+}
+
+.preview-title {
+	color: #b2bdbe;
+    text-align: right;
+    padding-right: 7px;
+    font-size: 17px;
+    margin-top: 97px;
+    padding-bottom: 7px;
+    margin-right: 25px;
+
+}
+
+.preview-card-padding {
+	margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 25px;
+}
+
+.card-color {
+	background-color: #394f63;
+	height: 106px;
+}
+
+.seperator {
+	color: #b1b9bd;
+	font-weight: 700;
+    font-size: 9px;
+    margin-bottom: -25px;
+}
+
+.seperator-text {
+	margin-bottom: -14px;
+	color: #445159;
+    font-size: 11px !important;
+    font-weight: 600;
+}
+
+.img-align-right {
+	text-align: right;
+}
+
+.user-name {
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+    margin-top: 40px;
+}
+
