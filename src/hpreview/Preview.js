@@ -45,7 +45,7 @@ export default function Preview(props) {
 		      	  <Row className="mb-3">
 		             <Form.Group as={Col} className="seperator">
 				       <div className="seperator-text"> EMAIL 
-				       		<span className="margin-left-20" id="hemail"> {props.email} </span>
+				       		<span className="margin-left-20 font-size-15" id="hemail"> {props.email} </span>
 				       </div>
 				       <hr />
 				    </Form.Group>
@@ -55,7 +55,7 @@ export default function Preview(props) {
 		          <Row className="mb-3">
 		             <Form.Group as={Col} className="seperator">
 				       <div className="seperator-text"> PHONE 
-				       		<span className="margin-left-20" id="hphone"> {props.phone} </span>
+				       		<span className="margin-left-20 font-size-15" id="hphone"> {props.phone} </span>
 				       </div>
 				       <hr />
 				    </Form.Group>
@@ -64,7 +64,7 @@ export default function Preview(props) {
 		          <Row className="mb-3">
 		             <Form.Group as={Col} className="seperator">
 				       <div className="seperator-text"> ADDRESS 
-				       		<span className="margin-left-20" id="haddress1"> {props.houseName} {' '} {props.street}</span>
+				       		<span className="margin-left-20 font-size-15" id="haddress1"> {props.houseName} {' '} {props.street}</span>
 				       </div>
 				       <hr />
 				    </Form.Group>
@@ -73,7 +73,7 @@ export default function Preview(props) {
 		          <Row className="mb-3">
 		             <Form.Group as={Col} className="seperator">
 		             	<div className="seperator-text">
-		               		<span className="margin-left-70" id="haddress2"> {props.suburb} {','} {props.state}</span>
+		               		<span className="margin-left-70 font-size-15" id="haddress2"> {props.suburb} {','} {props.state}</span>
 		               	</div>
 				       <hr />
 				    </Form.Group>
@@ -82,13 +82,13 @@ export default function Preview(props) {
 		          <Row className="mb-3">
 		             <Form.Group as={Col} className="seperator">
 				       <div className="seperator-text"> POSTCODE 
-				       		<span className="margin-left-20" id="hpostcode"> {props.postcode} </span>
+				       		<span className="margin-left-20 font-size-15" id="hpostcode"> {props.postcode} </span>
 				       </div>
 				       <hr />
 				    </Form.Group>
 				    <Form.Group as={Col} className="seperator">
 				       <div className="seperator-text"> COUNTRY 
-				       		<span className="margin-left-20" id="hcountry"> {props.country} </span>
+				       		<span className="margin-left-20 font-size-15" id="hcountry"> {props.country} </span>
 				       </div>
 				       <hr />
 				    </Form.Group>
