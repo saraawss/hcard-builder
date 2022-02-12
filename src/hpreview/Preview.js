@@ -13,11 +13,11 @@ export default function Preview(props) {
 		  <Card.Body className="card-color">
 		  
 		  <Row className="justify-content-md-center">
-		    <Col xs lg="5">
+		    <Col xs lg="7">
 		      <div className="user-name" id="hname"> {props.name} {' '} {props.surname}</div>
 		    </Col>
 			<Col md="auto"></Col>
-		    <Col xs lg="5">
+		    <Col xs lg="3">
 		      <div className="img-align">
 		   {!props.profile && <Figure >
 			  <Figure.Image

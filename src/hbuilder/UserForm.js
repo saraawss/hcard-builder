@@ -52,7 +52,7 @@ const  handleChange = async (e) =>  {
 		      	GIVEN NAME
 		      </Form.Label>
 		      <Col>
-		       <Form.Control size="sm" type="text" id="name" name="name" required onChange={handleChange}/>
+		       <Form.Control size="sm" type="text" id="name" name="name" maxLength={15} required onChange={handleChange}/>
 		      </Col>
 		    </Col>
 			<Col md="auto"></Col>
@@ -61,7 +61,7 @@ const  handleChange = async (e) =>  {
 		       SURNAME
 		      </Form.Label>
 		      <Col>
-		       <Form.Control size="sm" type="text" id="surname" name="surname" required onChange={handleChange}/>
+		       <Form.Control size="sm" type="text" id="surname" name="surname" maxLength={15} required onChange={handleChange}/>
 		      </Col>
 		    </Col>
           </Row>
@@ -72,7 +72,7 @@ const  handleChange = async (e) =>  {
 		      	EMAIL
 		      </Form.Label>
 		      <Col>
-		       <Form.Control size="sm" type="email"  id="email" name="email" required onChange={handleChange}/>
+		       <Form.Control size="sm" type="email"  id="email" name="email" maxLength={20} required onChange={handleChange}/>
 		      </Col>
 		   </Col>
 			<Col md="auto"></Col>
@@ -81,7 +81,7 @@ const  handleChange = async (e) =>  {
 		       PHONE
 		      </Form.Label>
 		      <Col>
-		       <Form.Control size="sm" type="text" id="phone" name="phone" required onChange={handleChange}/>
+		       <Form.Control size="sm" type="text" id="phone" name="phone" maxLength={15} required onChange={handleChange}/>
 		      </Col>
 		    </Col>
           </Row>
@@ -99,7 +99,7 @@ const  handleChange = async (e) =>  {
 		      	HOUSE NAME OR #
 		      </Form.Label>
 		      <Col>
-		       <Form.Control size="sm" type="text"  id="houseName" name="houseName" required onChange={handleChange}/>
+		       <Form.Control size="sm" type="text"  id="houseName" name="houseName" maxLength={15} required onChange={handleChange}/>
 		      </Col>
 		    </Col>
 			<Col md="auto"></Col>
@@ -108,7 +108,7 @@ const  handleChange = async (e) =>  {
 		       STREET
 		      </Form.Label>
 		      <Col>
-		       <Form.Control size="sm" type="text" id="street" name="street" required onChange={handleChange}/>
+		       <Form.Control size="sm" type="text" id="street" name="street" maxLength={15} required onChange={handleChange}/>
 		      </Col>
 		    </Col>
           </Row>
@@ -119,7 +119,7 @@ const  handleChange = async (e) =>  {
 		      	SUBURB
 		      </Form.Label>
 		      <Col>
-		       <Form.Control size="sm" type="text"  id="suburb" name="suburb" required onChange={handleChange}/>
+		       <Form.Control size="sm" type="text"  id="suburb" name="suburb" maxLength={10} required onChange={handleChange}/>
 		      </Col>
 		    </Col>
 			<Col md="auto"></Col>
@@ -128,7 +128,7 @@ const  handleChange = async (e) =>  {
 		       STATE
 		      </Form.Label>
 		      <Col>
-		       <Form.Control size="sm" type="text" id="state" name="state" required onChange={handleChange}/>
+		       <Form.Control size="sm" type="text" id="state" name="state" maxLength={10} required onChange={handleChange}/>
 		      </Col>
 		    </Col>
           </Row>
@@ -139,7 +139,7 @@ const  handleChange = async (e) =>  {
 		      	POSTCODE
 		      </Form.Label>
 		      <Col>
-		       <Form.Control size="sm" type="text" id="postcode" name="postcode" required onChange={handleChange} />
+		       <Form.Control size="sm" type="text" id="postcode" name="postcode" maxLength={8} required onChange={handleChange} />
 		      </Col>
 		    </Col>
 			<Col md="auto"></Col>
@@ -148,7 +148,7 @@ const  handleChange = async (e) =>  {
 		       COUNTRY
 		      </Form.Label>
 		      <Col>
-		       <Form.Control size="sm" type="text" id="country" name="country" required onChange={handleChange}/>
+		       <Form.Control size="sm" type="text" id="country" name="country" maxLength={12} required onChange={handleChange}/>
 		      </Col>
 		    </Col>
           </Row>
