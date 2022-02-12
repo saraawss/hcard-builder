@@ -18,7 +18,7 @@ export default function Preview(props) {
 		    </Col>
 			<Col md="auto"></Col>
 		    <Col xs lg="5">
-		      <div className="img-align-right">
+		      <div className="img-align">
 		   {!props.profile && <Figure >
 			  <Figure.Image
 			    width={85}

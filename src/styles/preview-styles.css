@@ -26,6 +26,19 @@
 	height: 106px;
 }
 
+@media (max-width: 767px) {
+    .card-color {
+		height: 120px;
+	}
+}
+
+@media (max-width: 480px) {
+    .card-color {
+		height: 180px;
+		padding-bottom: 20px;
+	}
+}
+
 .seperator {
 	color: #b1b9bd;
 	font-weight: 700;
@@ -40,8 +53,21 @@
     font-weight: 600;
 }
 
-.img-align-right {
+.img-align {
 	text-align: right;
+}
+
+@media (max-width: 767px) {
+    .img-align {
+		text-align: right;
+	}
+}
+
+@media (max-width: 480px) {
+    .img-align {
+		text-align: center;
+		padding-top: 10px;
+	}
 }
 
 .user-name {
@@ -50,4 +76,12 @@
 	font-size: 16px;
     margin-top: 40px;
 }
+
+@media (max-width: 480px) {
+    .user-name {
+		text-align: center;
+	}
+}
+
+
 
