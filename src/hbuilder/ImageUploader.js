@@ -30,12 +30,11 @@ const rejectStyle = {
   borderColor: '#ff1744'
 };
 
-export default function ImageUploader({image, setImage}) {
+export default function ImageUploader({image, setImage, croppedImg, setCroppedImg}) {
   const [srcImg, setSrcImg] = useState(null);
 
   const [crop, setCrop] = useState({ aspect: 12 / 12 ,unit: "%", width: 30,},);
-  const [croppedImg, setCroppedImg] = useState(false);
-
+  
   const onDrop = useCallback(acceptedFiles => {
    
       const reader = new FileReader();

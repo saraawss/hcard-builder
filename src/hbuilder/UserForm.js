@@ -6,6 +6,7 @@ import ImageUploader from './ImageUploader.js';
 export default function UserForm(props) {
 const [profileState, setProfileState] = useState(props);
 const [image, setImage] = useState(null);
+const [croppedImg, setCroppedImg] = useState(false);
 
 const [show, setShow] = useState(false);
 
@@ -183,12 +184,12 @@ const  handleChange = async (e) =>  {
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-			<ImageUploader image={image} setImage={setImage}/> 
+			<ImageUploader image={image} setImage={setImage} croppedImg={croppedImg} setCroppedImg={setCroppedImg}/> 
 		</Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" size="lg" className="shadow-sm button-blue" onClick={setProfile}>
+          {image && croppedImg && <Button variant="primary" size="lg" className="shadow-sm button-blue" onClick={setProfile}>
             Upload Image
-          </Button>
+          </Button> }
           <Button variant="secondary" size="lg" className="shadow-sm button-grey" onClick={handleClose}>
             Cancel
           </Button>
