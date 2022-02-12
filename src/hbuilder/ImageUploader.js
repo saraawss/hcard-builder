@@ -33,7 +33,8 @@ const rejectStyle = {
 export default function ImageUploader({image, setImage}) {
   const [srcImg, setSrcImg] = useState(null);
 
-  const [crop, setCrop] = useState({aspect: 16 / 9});
+  const [crop, setCrop] = useState({ aspect: 12 / 12 ,unit: "%", width: 30,},);
+  const [croppedImg, setCroppedImg] = useState(false);
 
   const onDrop = useCallback(acceptedFiles => {
    
@@ -68,6 +69,7 @@ export default function ImageUploader({image, setImage}) {
 
             const base64Image = canvas.toDataURL("image/jpeg", 1);
             setImage(base64Image)
+            setCroppedImg(true)
         } catch (e) {
             console.log("crop the image");
         }
@@ -103,12 +105,13 @@ export default function ImageUploader({image, setImage}) {
         <input data-testid="drop-input" {...getInputProps()} />
         <div>Drag and drop your or Select Image here.</div>
       </div> }
+      {image && croppedImg && <img alt="Crop" style={{ maxWidth: "100%" }} src={image} />}
       <aside>
-         {srcImg && 
+         {srcImg && !croppedImg &&
          				(<>
 						<div>
                                 <ReactCrop
-                                    style={{maxWidth: "50%"}}
+                                    style={{maxWidth: "100%"}}
                                     src={srcImg}
                                     onImageLoaded={setImage}
                                     crop={crop}

@@ -5,7 +5,7 @@ import ImageUploader from './ImageUploader.js';
 
 export default function UserForm(props) {
 const [profileState, setProfileState] = useState(props);
-const [image, setImage] = useState('');
+const [image, setImage] = useState(null);
 
 const [show, setShow] = useState(false);
 
