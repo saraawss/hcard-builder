@@ -1,5 +1,5 @@
 # hCard Builder React App
-This app is used to users to edit their personal details on our site.The app is responsive for different screen widths.
+This app is used to users to edit their personal details on our site.The app is responsive for different screen widths. Application has server side rendering, so it is SEO friendly and good performance.
 
 ### Packages
 
