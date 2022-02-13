@@ -35,7 +35,7 @@ const  handleChange = async (e) =>  {
 	<>
 	
 	<Container>
-      <p className="title">hCard Builder</p>
+      <h1 className="title">hCard Builder</h1>
     <div>
       <Form>
       

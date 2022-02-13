@@ -32,6 +32,10 @@ Testing, when user enter values in Personal Details screen, is it auto filling i
 
 In the project directory, you can run:
 
+### `npm run dev`
+
+The dev script invokes npm-run-all to run in parallel the build script and all scripts that start with dev:* - including dev:build-server and dev:start.
+
 ### `npm install`
 
 Installing all necessary packages
